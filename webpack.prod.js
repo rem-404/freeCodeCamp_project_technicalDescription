@@ -25,7 +25,7 @@ module.exports = merge(common, {
     ],
   },
   optimization: {
-    minimizer: [new TerserPlugin()]
-    // minimizer: [new CssMinimizerPlugin(), new TerserPlugin()]
+    // minimizer: [new TerserPlugin()]
+    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()]
   }
 });
